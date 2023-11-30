@@ -1,0 +1,245 @@
+
+/* global role */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #7AB730;
+    --secondary: #FFD33C;
+    --light: #F3F3F3;
+    --dark: #212121;
+}
+
+[class^=flaticon-]:before,
+[class*=" flaticon-"]:before,
+[class^=flaticon-]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+nav  .navbar-nav .nav-link{
+    position: relative;
+    padding: 30px 0;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    transition: all .3s;
+}
+
+nav  .navbar-nav .nav-link:hover,
+nav  .navbar-nav .nav-link.active{
+    color: var(--primary) !important;
+}
+     
+.btn-nav{
+    color: #F3F3F3 !important;
+}
+.btn-nav:hover{
+    color: #F3F3F3 !important;
+}
+.colse{
+    display: none;
+}
+@media (max-width: 991.98px) {
+    nav  .navbar-nav .nav-link{
+        margin-left: 0px;
+        padding: 15px 0 ;
+         float: left;
+
+    } 
+    .btn-nav{
+        margin-left: -49px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+ 
+}
+
+
+.hero-header {
+    background: url(../img/hero.jpg) top right no-repeat;
+    background-size: cover;
+}
+
+
+.bi-play-btn{
+    font-size: 60px;
+    margin-left: 40px; 
+}
+
+.About .asid-about p{
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    color: var(--primary);
+    cursor: pointer;
+}
+.About .asid-about p:hover{
+    background-color: var(--primary);
+    color: var(--light);
+}
+ .About .asid-about .active {
+    background-color: var(--primary);
+    color: var(--light);
+ }
+
+ .SERVICES .SERVICES-item i{
+    position: relative;
+    padding-left: 20px;
+    transition: .3s;
+ }
+ .SERVICES .SERVICES-item a:hover i{
+    padding-left: 50px;
+ }
+
+ .SERVICES .SERVICES-item a i::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    left: 10px;
+    margin-top: -1px;
+    background: var(--primary);
+    transition: .3s;
+ }
+ .SERVICES .SERVICES-item a:hover i::after{
+   width: 50px;
+ }
+
+ .Products .product-item{
+    padding: 30px;
+    transition: .3s;
+ }
+
+ .Products .product-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ .product-item .btn-action {
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.product-item:hover .btn-action {
+    bottom: -20px;
+    opacity: 1;
+}
+
+.Offer{
+    background: url(../img/offer.jpg) top right no-repeat;
+    background-size: cover;
+}
+.price .group{
+    transition: .3s;
+}
+ .price .group:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+ }
+
+ .team-item img{
+    transition: .3s;
+    cursor: pointer;
+ }
+ .team-item img:hover{
+    transform: scale(1.1);
+ }
+
+ .team-item .overlay{
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    bottom: 45px;
+    left: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(122, 183, 48, .8);
+    transition: .5s;
+    opacity: 0;
+    cursor: pointer;
+ }
+
+ .team-item:hover .overlay{
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ opacity: 1;
+ }
+
+ .Testimonial{
+    background: url(../img/testimonial.jpg) top left no-repeat;
+    background-size: cover;
+ }
+
+ .blog-item{
+    transition: all .3s;
+ }
+ .blog-item:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+ .back-to-top {
+    position: fixed !important;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+@media (max-width: 991.98px){
+    .group,
+    .blog-item,
+    .team-item {
+        margin-bottom: 25px;
+    }
+}
